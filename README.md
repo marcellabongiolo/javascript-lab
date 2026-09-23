@@ -1,42 +1,92 @@
-<div align="center">
+# 🌐 JavaScript Lab
 
-# 🌐 JAVASCRIPT LAB & UTILITIES ⚡
+Laboratório de estudos em **JavaScript moderno**, com foco em lógica, manipulação de dados e organização de código.
 
-<img src="https://img.shields.io/badge/LANGUAGE-JAVASCRIPT-yellow?style=for-the-badge&logo=javascript&logoColor=black" />
-<img src="https://img.shields.io/badge/FOCUS-MODERN_ES6%2B_%26_LOGIC-blue?style=for-the-badge" />
-<img src="https://img.shields.io/badge/STATUS-ACTIVE-success?style=for-the-badge" />
+## 🎯 Objetivo
 
-> *“Building dynamic, efficient, and clean code for the web and beyond.”*
+O projeto reúne exemplos pequenos e práticos para exercitar fundamentos importantes do JavaScript, mantendo o código simples, testável e fácil de evoluir.
 
-</div>
+## 🧩 Projeto atual
 
----
+### Analisador de arrays
 
-## 🔬 About This Repository
+O arquivo `array_analyzer.js` implementa a função `analisarNumeros()`, que recebe um array de números e retorna:
 
-Welcome to my **javascript-lab** repository! This space is dedicated to exploring modern JavaScript (ES6+), asynchronous programming, data manipulation, and interactive logical scripts.
+- quantidade de elementos;
+- soma dos valores;
+- média com duas casas decimais;
+- maior valor;
+- menor valor.
 
-### 📂 What You Will Find Here:
-* **Modern ES6+ Features:** Arrow functions, destructuring, array methods (`map`, `filter`, `reduce`).
-* **Utility Scripts:** Practical functions designed to solve real-world logic problems.
-* **Clean Code Standards:** Readable, modular, and well-documented JavaScript architecture.
+A função também valida a entrada e rejeita arrays vazios, valores não numéricos e números não finitos.
 
----
+## 🛠️ Tecnologias
 
-## 🛠️ Tech Stack & Standards
-* **Language:** JavaScript (Node.js / Browser compatible)
-* **Conventions:** ES6+ syntax, camelCase naming, comprehensive JSDoc comments.
+- JavaScript
+- Node.js
+- CommonJS
+- Node.js Test Runner
+- GitHub Actions
 
----
+## ▶️ Como executar
 
-## 👩‍💻 Author
+Pré-requisito: **Node.js 18 ou superior**.
 
-<div align="center">
+Execute o exemplo:
 
-**Marcella Bongiolo**  
-*Future Software Engineer | UNESC Student*
+```bash
+node array_analyzer.js
+```
 
-[![GitHub Badge](https://img.shields.io/badge/GitHub-marcellabongiolo-181717?style=flat-square&logo=github)](https://github.com/marcellabongiolo)
-[![LinkedIn Badge](https://img.shields.io/badge/LinkedIn-marcellabongiolo-0A66C2?style=flat-square&logo=linkedin)](https://linkedin.com/in/marcellabongiolo)
+Execute os testes:
 
-</div>
+```bash
+npm test
+```
+
+## 🧪 Testes
+
+Os testes verificam:
+
+- cálculo correto das métricas;
+- média com duas casas decimais;
+- números negativos;
+- array com um único elemento;
+- rejeição de array vazio;
+- rejeição de valores inválidos.
+
+A integração contínua executa os testes automaticamente em pushes para `main` e pull requests.
+
+## 📁 Estrutura
+
+```text
+javascript-lab/
+├── .github/
+│   └── workflows/
+│       └── tests.yml
+├── tests/
+│   └── array_analyzer.test.js
+├── .gitignore
+├── LICENSE
+├── README.md
+├── array_analyzer.js
+└── package.json
+```
+
+## 🚀 Próximos passos
+
+- adicionar outros exercícios de lógica;
+- explorar módulos ES;
+- trabalhar com manipulação de objetos e coleções;
+- criar pequenos projetos com APIs;
+- evoluir para aplicações web com JavaScript.
+
+## 👩‍💻 Autora
+
+**Marcella Bongiolo**
+
+Este repositório faz parte da prática de desenvolvimento e estudos em programação.
+
+## 📄 Licença
+
+Distribuído sob a licença MIT.
